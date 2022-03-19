@@ -9,7 +9,7 @@ export default function OpenCard(card) {
     return !open ? (
         <div className="card" onClick={() => setOpen(true)}>
             <h1>Pergunta {card.number}</h1>
-            <ion-icon class="icon" name="play-outline"></ion-icon>
+            <ion-icon name="play-outline"></ion-icon>
         </div>
     ) : (<CardFront question={card.question} answer={card.answer} number={card.number}/>)
 }

@@ -93,7 +93,7 @@ body {
     text-align: left;
 }
 
-.icon {
+ion-icon {
     font-size: 30px;
 }
 
@@ -238,3 +238,22 @@ footer h1 {
 .performance .green {
     background-color: #2FBE34;
 }
+
+/* CLOSECARD */
+
+.card .red {
+    text-decoration: line-through;
+    color: red;
+}
+
+.card .green {
+    text-decoration: line-through;
+    color: green;
+}
+
+.card .orange {
+    text-decoration: line-through;
+    color: orange;
+}
+
+
