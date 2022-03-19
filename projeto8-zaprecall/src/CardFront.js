@@ -1,10 +1,15 @@
 import React from 'react';
 
+import CardBack from './CardBack';
+
 export default function CardFront(card) {
-    return (
+
+    const [showAnswer, setShowAnswer] = React.useState(false);
+
+    return !showAnswer ? (
         <div className="cardfront">
             <p>{card.question}</p>
-            <img src="./images/setinha.png" alt="" />
+            <img onClick={() => setShowAnswer(true)} src="./images/setinha.png" alt="" />
         </div>
-    )
+    ) : (<CardBack answer={card.answer} number={card.number}/>)
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Recall from "./Recall"
+import Recall from "./Recall";
 
 function Page() {
-    const [page,setPage] = React.useState(true)
+    const [page,setPage] = React.useState(true);
 
         return page ? (
         <>
