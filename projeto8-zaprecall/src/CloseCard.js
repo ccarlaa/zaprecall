@@ -11,15 +11,15 @@ function HtmlCloseCard(card) {
 export default function CloseCard(card) {
     if(card.color === "red"){
         return (
-            <HtmlCloseCard color="red" icon="close-circle" />
+            <HtmlCloseCard color="red" icon="close-circle" number={card.number} />
         )
     }if(card.color === "green"){
         return (
-            <HtmlCloseCard color="green" icon="checkmark-circle" />
+            <HtmlCloseCard color="green" icon="checkmark-circle " number={card.number} />
         )
     }if(card.color === "orange"){
         return (
-            <HtmlCloseCard color="orange" icon="help-circle" />
+            <HtmlCloseCard color="orange" icon="help-circle" number={card.number}/>
         )
     }
 }
