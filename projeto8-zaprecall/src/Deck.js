@@ -48,10 +48,12 @@ const deckUm =[
 ]
 
 export default function Deck() {
-    let numberCard = 0;
+    let numberCard = 1;
+    let shuffleDeck = deckUm.sort(() => Math.random() - 0.5);
+    console.log(shuffleDeck);
     return(
         <>
-            {deckUm.map(card => <OpenCard question="card.question" answer="card.answer" number={numberCard++}/>)}
+            {shuffleDeck.map(card => <OpenCard question={card.question} answer={card.answer} number={numberCard++}/>)}
         </>
     )
 }

@@ -8,7 +8,7 @@ function Page() {
         return page ? (
         <>
             <div className="presentation">        
-                <img src="./images/logo.png" />
+                <img src="./images/logo.png" alt=""/>
                 <h1>ZapRecall</h1>
             </div>
             <button className="start-button" onClick={() => setPage(false)}>Iniciar Recall!</button>
