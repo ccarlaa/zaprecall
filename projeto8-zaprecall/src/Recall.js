@@ -1,6 +1,5 @@
 import Deck from "./Deck"
 import Header from "./Header"
-import Footer from "./Footer"
 
 export default function Recall() {
     return (
@@ -9,7 +8,6 @@ export default function Recall() {
             <div className="deck">
                 <Deck />
             </div>
-            <Footer />
         </>
     )
 }
