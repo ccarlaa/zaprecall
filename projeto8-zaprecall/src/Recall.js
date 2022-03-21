@@ -1,6 +1,5 @@
-import Deck from "./Deck"
-import Header from "./Header"
-import FirstFooter from "./FirstFooter"
+import Deck from "./Deck";
+import Header from "./Header";
 
 export default function Recall(card) {
     return (
@@ -9,7 +8,6 @@ export default function Recall(card) {
             <div className="deck">
                 <Deck />
             </div>
-            <FirstFooter decklength={card.decklength}/>
         </>
     )
 }

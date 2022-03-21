@@ -1,4 +1,6 @@
-import OpenCard from "./OpenCard"
+import OpenCard from "./OpenCard";
+
+import FirstFooter from "./FirstFooter";
 
 const deckUm =[
     {
@@ -54,6 +56,7 @@ export default function Deck() {
     return(
         <>
             {shuffleDeck.map(card => <OpenCard question={card.question} answer={card.answer} number={numberCard++} decklength={decklength}/>)}
+            <FirstFooter decklength={decklength}/>
         </>
     )
 }

@@ -289,7 +289,7 @@ footer .orange {
 
 .message {
     width: 100vw;
-    height: auto;
+    height: 70px;
     background-color: white;
     position: fixed;
     display: flex;
