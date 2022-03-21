@@ -1,5 +1,8 @@
-let score = 0;
-let icon = [];
+import Message from "./Message"
+
+let score = -1;
+let array = [];
+let incorrect = false;
 
 function HtmlIcon(answer) {
     if(answer.icon === "1"){
@@ -24,17 +27,34 @@ function HtmlIcon(answer) {
     }
 }
 
-export default function Footer(card) {
-    console.log("second")
-    icon = [...icon,card.icon];
-    score = score + 1;
+function HtmlFooter(score) {
+    array =[...array,score.icon];
     return (
         <footer className="second-footer">
-            <div class="icons">
-                {icon.map(answer => <HtmlIcon icon={answer} />)}
+            <div className="icons">
+                {array.map(answer => <HtmlIcon icon={answer} />)}
             </div>
-            <h1>{score}/{card.decklength}-CONCLUÍDOS</h1>
+            <h1>{score.score}/{score.decklength}-CONCLUÍDOS</h1>
         </footer>
     )
+}
+
+export default function Footer(card) {
+    score = score + 1;
+    if(card.icon === "1"){
+        incorrect = true;
+    }
+    if(score < card.decklength){
+        return (
+            <HtmlFooter score={score} decklength={card.decklength} icon={card.icon}/>
+        )
+    }else{
+        return (
+            <>
+                <Message status={incorrect} />
+                <HtmlFooter score={score} decklength={card.decklength} icon={card.icon}/>
+            </>
+        )
+    }
 }
 

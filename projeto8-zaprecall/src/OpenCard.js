@@ -1,12 +1,9 @@
 import React from 'react';
 
 import CardFront from "./CardFront";
-// import FirstFooter from "./FirstFooter"
 
 export default function OpenCard(card) {
-
     const[open, setOpen] = React.useState(false);
-
     return !open ? (
         <>
             <div className="card" onClick={() => setOpen(true)}>
@@ -17,7 +14,6 @@ export default function OpenCard(card) {
     ) : (
         <>
             <CardFront question={card.question} answer={card.answer} number={card.number} decklength={card.decklength}/>
-            {/* <FirstFooter decklength={card.decklength} /> */}
         </>
     )
 }
