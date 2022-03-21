@@ -1,5 +1,6 @@
+import Footer from "./SecondFooter";
 
-function HtmlCloseCard(card) {
+function HtmlOneCloseCard(card) {
     return (
         <div className="card">
             <h1 className={card.color}>Pergunta {card.number}</h1>
@@ -8,18 +9,27 @@ function HtmlCloseCard(card) {
     )
 }
 
-export default function CloseCard(card) {
+export default function HtmlCloseCard(card) {
     if(card.color === "red"){
         return (
-            <HtmlCloseCard color="red" icon="close-circle" number={card.number} />
+            <>
+                <HtmlOneCloseCard color="red" icon="close-circle" number={card.number} />
+                <Footer decklength={card.decklength} icon="1" color="red"/>
+            </>
         )
     }if(card.color === "green"){
         return (
-            <HtmlCloseCard color="green" icon="checkmark-circle " number={card.number} />
+            <>
+                <HtmlOneCloseCard color="green" icon="checkmark-circle" number={card.number} />
+                <Footer decklength={card.decklength} icon="2" color="green" />
+            </>
         )
     }if(card.color === "orange"){
         return (
-            <HtmlCloseCard color="orange" icon="help-circle" number={card.number}/>
+            <>
+                <HtmlOneCloseCard color="orange" icon="help-circle" number={card.number}/>
+                <Footer decklength={card.decklength} icon="3" color="orange"/>
+            </>
         )
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CardFront from "./CardFront";
-import Footer from "./Footer";
+// import FirstFooter from "./FirstFooter"
 
 export default function OpenCard(card) {
 
@@ -13,12 +13,11 @@ export default function OpenCard(card) {
                 <h1>Pergunta {card.number}</h1>
                 <ion-icon name="play-outline"></ion-icon>
             </div>
-            <Footer lenght={card.length} state={open}/>
         </>
     ) : (
         <>
-            <CardFront question={card.question} answer={card.answer} number={card.number}/>
-            <Footer lenght={card.length} state={open}/>
+            <CardFront question={card.question} answer={card.answer} number={card.number} decklength={card.decklength}/>
+            {/* <FirstFooter decklength={card.decklength} /> */}
         </>
     )
 }

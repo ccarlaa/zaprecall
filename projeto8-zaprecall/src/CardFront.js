@@ -11,5 +11,5 @@ export default function CardFront(card) {
             <p>{card.question}</p>
             <img onClick={() => setShowAnswer(true)} src="./images/setinha.png" alt="" />
         </div>
-    ) : (<CardBack answer={card.answer} number={card.number}/>)
+    ) : (<CardBack answer={card.answer} number={card.number} decklength={card.decklength}/>)
 }

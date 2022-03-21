@@ -3,10 +3,7 @@ import React from 'react';
 import CloseCard from "./CloseCard"
 
 export default function CardBack(card) {
-
     const [closeCard,setCloseCard] = React.useState(false);
-    console.log(closeCard);
-
     return !closeCard ? (
         <div className="answer">
             <p>{card.answer}</p>
@@ -16,5 +13,5 @@ export default function CardBack(card) {
                 <p className="green" onClick={() => setCloseCard("green")}>Zap!</p>
             </div>
         </div>
-    ) : (<CloseCard color={closeCard} number={card.number}/>)
+    ) : (<CloseCard color={closeCard} number={card.number} decklength={card.decklength}/>)
 }
