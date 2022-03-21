@@ -1,6 +1,6 @@
 import Message from "./Message"
 
-let score = -1;
+let score = 0;
 let array = [];
 let incorrect = false;
 
@@ -28,7 +28,7 @@ function HtmlIcon(answer) {
 }
 
 function HtmlFooter(score) {
-    array =[...array,score.icon];
+    array = [...array,score.icon];
     return (
         <footer className="second-footer">
             <div className="icons">
