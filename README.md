@@ -38,8 +38,6 @@ npm startmoneybag-minha-carteira
 
 6. Finally, access http://localhost:3000 in your browser.
 
-Note: Don't forget to run the [back-end](https://github.com/ccarlaa/mywallet-back) of the application alongside.
-
 ***
 ## 📝 Sobre
 
