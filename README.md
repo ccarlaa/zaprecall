@@ -1,11 +1,46 @@
-  ## ⚡️ ZapRecall
+[**English**](#card_file_box-zaprecall)
+[**Portuguese**](#-sobre)
 
-<p>Aplicação front-end que visa implementar um conjunto de flashcards .</p>
+## :card_file_box: ZapRecall
 
-<img src=/projeto8-zaprecall/public/images/zaprecall.gif  width="300" />
+<img src=/projeto8-zaprecall/public/images/zaprecall.gif width="300" />
 
 [ZapRecall](https://projeto8-zaprecall-livid.vercel.app/)
 
+## 📝 About
+
+<p>The application was created to gain experience with the React library. It was designed to be responsive, and the following technologies were used: CSS, HTML, Javascript, and React.
+</p>
+
+[![My Skills](https://skills.thijs.gg/icons?i=html,css,javascript,react&theme=light)](https://skills.thijs.gg)
+
+## 📁 Project Access
+
+You can [access the project's source code](https://github.com/ccarlaa/projeto8-zaprecall) or [download it](https://github.com/ccarlaa/projeto8-zaprecall/archive/refs/heads/main.zip ).
+
+## 🛠️ Open and Run the Project
+
+After downloading the project, you can open it with Visual Studio Code. To do this, on the launcher screen, click:
+
+1. File > Open Folder
+2. Locate the project's location and select it (If the project is downloaded as a zip file, it needs to be extracted before locating it.)
+3. Finally, click Open
+4. Then open the terminal and install the dependencies with the following command:
+
+```bash
+npm install 
+```
+5. To run de project,execute:
+
+```bash
+npm startmoneybag-minha-carteira
+``` 
+
+6. Finally, access http://localhost:3000 in your browser.
+
+Note: Don't forget to run the [back-end](https://github.com/ccarlaa/mywallet-back) of the application alongside.
+
+***
 ## 📝 Sobre
 
 <p>A aplicação foi feita com o objetivo de adquirir experiência com a biblioteca React.
